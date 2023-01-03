@@ -1,0 +1,18 @@
+{
+    "relyingPartyUUID": "00000000-0000-0000-0000-000000000000",
+    "relyingPartyName": "DEMO",
+    "certificateLevel":"QUALIFIED",
+    "hash": "ODE3N2UzMGUwNDRjMjg2ZTZjZGFkMmIyZjg4MDYyMmE2MWVlZDZiOGI0ODcwZjkxYjUwMmRiYjg1NGMzMzg5OQ==",
+    "hashType": "SHA512",
+    "allowedInteractionsOrder": [
+    {
+    "type": "confirmationMessage",
+    "displayText200": "Up to 200 characters of text here.."
+    },
+    {
+    "type": "verificationCodeChoice",
+    "displayText60": "Up to 60 characters of text here.."
+    }
+    ]
+    
+    }
