@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20230110 15:46:25.069" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\hans.latt\.vscode\extensions\robocorp.robotframework-lsp-1.7.3\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="POST">
+<arg>https://sid.demo.sk.ee/smart-id-rp/v2/signature/etsi/PNOEE-39802180031</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<msg timestamp="20230110 15:46:25.851" level="FAIL">No keyword with name 'POST' found.</msg>
+<status status="FAIL" starttime="20230110 15:46:25.851" endtime="20230110 15:46:25.851"/>
+</kw>
+<kw name="Open Application">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=HYFDU19109010558</arg>
+<arg>appPackage=com.stagnationlab.sk</arg>
+<arg>appActivity=com.stagnationlab.sk.MainActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<status status="NOT RUN" starttime="20230110 15:46:25.852" endtime="20230110 15:46:25.852"/>
+</kw>
+<kw name="Get File">
+<var>${body}</var>
+<arg>Z:/\UITest/\ui_test/\Resources/\jsonBody.json</arg>
+<arg>encoding=UTF-8</arg>
+<arg>encoding_errors=strict</arg>
+<msg timestamp="20230110 15:46:51.423" level="FAIL">No keyword with name 'Get File' found. Did you mean:
+    BuiltIn.Get Time</msg>
+<status status="FAIL" starttime="20230110 15:46:51.423" endtime="20230110 15:46:51.423"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230110 15:46:51.423" endtime="20230110 15:46:51.423"/>
+</kw>
+<status status="PASS" starttime="20230110 15:46:25.136" endtime="20230110 15:46:57.169"/>
+</kw>
+<status status="PASS" starttime="20230110 15:46:25.136" endtime="20230110 15:46:57.169"/>
+</test>
+<status status="PASS" starttime="20230110 15:46:25.117" endtime="20230110 15:46:57.169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
