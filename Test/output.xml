@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230502 19:43:35.533" rpa="false" schemaversion="3">
+<suite id="s1" name="Smart-ID" source="C:\Users\hans.latt\ui_test\Test\Smart-ID.robot">
+<test id="s1-t1" name="How to use Smart-ID can be opened" line="98">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=HYFDU19109010558</arg>
+<arg>appPackage=com.stagnationlab.sk</arg>
+<arg>appActivity=com.stagnationlab.sk.MainActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230502 19:43:35.926" endtime="20230502 19:43:49.242"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230502 19:43:54.242" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230502 19:43:49.242" endtime="20230502 19:43:54.242"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Help}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:43:54.245" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Open help menu']'.</msg>
+<msg timestamp="20230502 19:43:55.250" level="INFO">xpath criteria: //android.widget.Button[@text='Open help menu']</msg>
+<status status="PASS" starttime="20230502 19:43:54.242" endtime="20230502 19:43:55.250"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${HelpModal}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230502 19:43:56.976" level="INFO">xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView/android.widget.ScrollView)
+xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView/android.widget.ScrollView)</msg>
+<status status="PASS" starttime="20230502 19:43:55.250" endtime="20230502 19:43:56.976"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${HowTo}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:43:56.979" level="INFO">Clicking element 'xpath=//android.widget.Button[@index='0']'.</msg>
+<msg timestamp="20230502 19:43:57.487" level="INFO">xpath criteria: //android.widget.Button[@index='0']</msg>
+<status status="PASS" starttime="20230502 19:43:56.979" endtime="20230502 19:43:57.487"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${HowToModal}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230502 19:43:58.677" level="INFO">xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View)
+xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View)</msg>
+<status status="PASS" starttime="20230502 19:43:57.490" endtime="20230502 19:43:58.677"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Help_OK}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:43:58.680" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<msg timestamp="20230502 19:43:58.979" level="INFO">xpath criteria: //android.widget.Button[@text='OK']</msg>
+<status status="PASS" starttime="20230502 19:43:58.679" endtime="20230502 19:43:58.979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Help_Next_Modal}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230502 19:43:59.845" level="INFO">xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View)</msg>
+<status status="PASS" starttime="20230502 19:43:58.981" endtime="20230502 19:43:59.845"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Help_Next}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:43:59.848" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Next']'.</msg>
+<msg timestamp="20230502 19:44:00.395" level="INFO">xpath criteria: //android.widget.Button[@text='Next']</msg>
+<status status="PASS" starttime="20230502 19:43:59.845" endtime="20230502 19:44:00.395"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Help_Next}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:44:00.399" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Next']'.</msg>
+<msg timestamp="20230502 19:44:01.275" level="INFO">xpath criteria: //android.widget.Button[@text='Next']</msg>
+<status status="PASS" starttime="20230502 19:44:00.395" endtime="20230502 19:44:01.275"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Help_Next}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:44:01.277" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Next']'.</msg>
+<msg timestamp="20230502 19:44:02.190" level="INFO">xpath criteria: //android.widget.Button[@text='Next']</msg>
+<status status="PASS" starttime="20230502 19:44:01.275" endtime="20230502 19:44:02.190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${NoThanks_Modal}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230502 19:44:03.163" level="INFO">xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View)</msg>
+<status status="PASS" starttime="20230502 19:44:02.192" endtime="20230502 19:44:03.163"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${NoThanks}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:44:03.168" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='No thanks']'.</msg>
+<msg timestamp="20230502 19:44:03.496" level="INFO">xpath criteria: //android.widget.Button[@text='No thanks']</msg>
+<status status="PASS" starttime="20230502 19:44:03.163" endtime="20230502 19:44:03.496"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Done_Modal}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230502 19:44:04.208" level="INFO">xpath criteria: (/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View)</msg>
+<status status="PASS" starttime="20230502 19:44:03.498" endtime="20230502 19:44:04.210"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Done}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230502 19:44:04.210" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Done']'.</msg>
+<msg timestamp="20230502 19:44:04.793" level="INFO">xpath criteria: //android.widget.Button[@text='Done']</msg>
+<status status="PASS" starttime="20230502 19:44:04.210" endtime="20230502 19:44:04.793"/>
+</kw>
+<status status="PASS" starttime="20230502 19:43:35.925" endtime="20230502 19:44:04.793"/>
+</test>
+<status status="PASS" starttime="20230502 19:43:35.536" endtime="20230502 19:44:04.795"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Smart-ID">Smart-ID</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
